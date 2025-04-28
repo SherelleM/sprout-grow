@@ -1,0 +1,132 @@
+.about-environment {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    padding-bottom: 50px;
+    background-color: var(--dark-green);
+}
+
+/* Make the why about-environment content flexible and centered */
+.about-environment-content {
+    flex: 1;
+    display: flex;
+    position: relative;
+    padding: 40px;
+
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* Style the about-environment why heading with a large white font */
+.about-environment-content h1 {
+    padding-bottom: 10px;
+
+    font-size: 49px;
+    font-family: var(--main_header-font);
+    color: #fff;
+    text-align: center;
+}
+
+/* Style the about-environment why paragraphs with a medium white font */
+.about-environment-content p {
+    padding: 0px 20px 0px 20px;
+
+    font-size: 18px;
+    color: #fff;
+    font-family: var(--header-font);
+    text-align: center;
+
+}
+
+/* Styling information list */
+
+.about-environment-list {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 80%;
+    margin: 0 auto;
+    
+}
+/* styles the entire list */
+.about-environment-list ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0;
+  }
+
+/* styles the list items individually */
+.about-environment-list ul li {
+    border: 1px solid #ddd; /* Add a thin border to each list item */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #fff; 
+    padding: 15px;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	border-radius: 0.5rem;
+     margin-bottom: 20px;
+  }
+
+  /* Styles the header and paragraph elements */
+.about-environment-list ul h1 {
+    font-family: var(--main_header-font);
+    color: var(--dark-green);
+    padding-bottom: 10px;
+}
+
+.about-environment-list ul p {
+    font-family: var(--header-font);
+   
+}
+
+/* styles the container holding the partnership logos */
+.image-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Styles the partnership logos */
+.about-environment-list ul li img {
+    max-width: 200px;
+    margin: auto;
+    padding: 20px 20px 0px 20px;
+}
+
+#contact {
+    padding-top: 20px;
+    color: var(--dark-green);
+    text-align: center;
+}
+
+/* styling contact button */
+.about-environment-contact-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+    padding-top: 10px;
+}
+
+.about-environment-contact__btn {
+    padding: 15px;
+    margin: auto;
+    border-radius: 25px;
+    min-width: 212px;
+    outline: none;
+    border: none;
+    background: var(--dark-green);
+    font-family: var(--main_header-font);
+   
+    cursor: pointer;
+
+    color: #fff;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.about-environment-contact__btn:hover{
+    background: var(--light-green);
+}

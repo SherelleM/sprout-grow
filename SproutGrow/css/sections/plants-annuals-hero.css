@@ -1,0 +1,55 @@
+/* styles the back button*/
+.back-btn-plants {
+    display: flex;
+    padding: 8px 20px 8px 20px;
+    margin: 20px 0px 20px 0px;
+    background-color: var(--dark-green);
+    text-decoration: none;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    font-family: var(--main_header-font);
+    font-size: 16px; 
+    text-align: center; 
+    width: fit-content;
+}
+
+/* Add a hover effect to the back buttons with a lighter green background */
+.back-btn-plants:hover{
+    background: var(--light-green);
+}
+
+.plants-annuals-hero {
+    display: flex;
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+/* Make the plants-annuals-hero content flexible and centered */
+.plants-annuals-hero-content {
+    flex: 1;
+    display: flex;
+    position: relative;
+    padding: 20px 40px 20px 40px;
+    margin-bottom: 20px;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+/* Style the plants-annuals-hero info section with some padding */
+.plants-annuals-hero-content-info h1 {
+    padding-bottom: 20px;
+
+    font-size: 49px;
+    font-family: var(--main_header-font);
+    color: var(--dark-green);
+}
+
+.plants-annuals-hero-content-info p {
+    padding-bottom: 10px;
+
+    font-size: 20px;
+    font-family: var(--header-font);
+    color: #000;
+}

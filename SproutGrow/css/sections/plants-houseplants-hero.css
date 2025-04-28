@@ -1,0 +1,34 @@
+.plants-houseplants-hero {
+    display: flex;
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+/* Make the plants-houseplants-hero content flexible and centered */
+.plants-houseplants-hero-content {
+    flex: 1;
+    display: flex;
+    position: relative;
+    padding: 20px 40px 20px 40px;
+    margin-bottom: 20px;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+/* Style the plants-houseplants-hero info section with some padding */
+.plants-houseplants-hero-content-info h1 {
+    padding-bottom: 20px;
+
+    font-size: 49px;
+    font-family: var(--main_header-font);
+    color: var(--dark-green);
+}
+
+.plants-houseplants-hero-content-info p {
+    padding-bottom: 10px;
+
+    font-size: 20px;
+    font-family: var(--header-font);
+    color: #000;
+}

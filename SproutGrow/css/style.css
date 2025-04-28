@@ -1,0 +1,101 @@
+/*Import fonts from Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Belgrano&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/* Import CSS files fromm sections folder */
+@import url(sections/header.css);
+@import url(sections/footer.css);
+
+@import url(sections/hero.css);
+@import url(sections/commitment.css);
+@import url(sections/visit.css);
+
+@import url(sections/contact-hero.css);
+@import url(sections/contact-whyus.css);
+
+@import url(sections/about-hero.css);
+@import url(sections/about-environment.css);
+@import url(sections/about-you.css);
+
+@import url(sections/plants-hero.css);
+@import url(sections/plants-catalog.css);
+
+@import url(sections/plants-annuals-hero.css);
+@import url(sections/plants-annuals.css);
+
+@import url(sections/plants-perennials-hero.css);
+@import url(sections/plants-perennials.css);
+
+@import url(sections/plants-trees-shrubs-hero.css);
+@import url(sections/plants-trees-shrubs.css);
+
+@import url(sections/plants-houseplants-hero.css);
+@import url(sections/plants-houseplants.css);
+
+@import url(sections/resources-hero.css);
+@import url(sections/resources-nav.css);
+@import url(sections/resources-content.css);
+@import url(sections/resources-register.css);
+@import url(sections/resources-blog__1.css);
+@import url(sections/resources-blog__2.css);
+@import url(sections/resources-blog__3.css);
+@import url(sections/resources-guides__1.css);
+@import url(sections/resources-guides__2.css);
+@import url(sections/resources-guides__3.css);
+
+@import url(sections/community-hero.css);
+@import url(sections/community-nav.css);
+@import url(sections/community-content.css);
+@import url(sections/community-share.css);
+
+
+
+/* Define custom variables for colors and fonts */
+:root {
+    --main_header-font: 'Varela Round', sans-serif;
+    --header-font: 'Belgrano', serif;
+    --text-font: 'Roboto Slab', serif;
+
+    --dark-green: #054d3bff;
+    --light-green: #8fbd4f;
+    --lighter-green: rgb(220, 247, 220);
+    --light-pink: #f1dedeff;
+    --light-brown: #a18276ff;
+    --dark-purple: #453643ff;
+
+}
+
+/* Reset the margin, padding, and box-sizing for all elements */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+  }
+  
+  /* Center the body element */
+  body {
+    margin: 0 auto;
+  }
+  
+  /* Remove the text-decoration and inherit the color for all links */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  button {
+    cursor: pointer;
+  }
+  
+
+
+
+
+
+
+
+  
+ 

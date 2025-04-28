@@ -1,0 +1,252 @@
+/* This section styles the why contact us section of the contact us page */
+
+/* Use a flexbox layout for the commitment container and make it vertical */
+.contact-whyus {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+/* Create an overlay with a dark green background and place it behind the content */
+.contact-whyus-overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    
+    background-color: var(--dark-green);
+    z-index: -1;
+}
+/* Make the why contact us content flexible and centered */
+.contact-whyus-content {
+    flex: 1;
+    display: flex;
+    position: relative;
+    padding: 40px;
+
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* Style the why contact us content section with some padding and alignment */
+.contact-whyus-content__info {
+    padding-top: 20px; 
+    padding-bottom: 20px;
+    flex: 1;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+/* Style the contact why us heading with a large white font */
+.contact-whyus-content__info h1 {
+    padding-bottom: 10px;
+
+    font-size: 49px;
+    font-family: var(--main_header-font);
+    color: #fff;
+    text-align: center;
+}
+
+/* Style the contact why us paragraphs with a medium white font */
+.contact-whyus-content__info p {
+    padding: 0px 20px 0px 20px;
+
+    font-size: 18px;
+    color: #fff;
+    font-family: var(--header-font);
+    text-align: center;
+
+}
+
+/* Style the last contact why us paragraph with a lighter green font */
+.contact-whyus-content__info p:last-child {
+    padding-top: 20px;
+
+    font-size: 18px;
+    color: var(--lighter-green);
+    font-family: var(--header-font);
+
+}
+
+/* editing info of whyus section */
+
+.contact-whyus-info h1 {
+    margin-top: 30px;
+    font-size: 49px;
+    font-family: var(--main_header-font);
+    color: white;
+    text-align: center;
+}
+
+.contact-whyus-info-content__sections {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+/* editing contact form */
+
+.contact-form {
+    flex-wrap: wrap;
+    flex: 2;
+	position: relative;
+
+    padding: 40px;
+    border-radius: 8px;
+
+    min-width: 300px;
+    margin: 0 auto;
+    background-color: white;
+    font-family: var(--main_header-font);
+    color: var(--dark-green);
+    font-size: 18px;
+}
+
+/* styles the text area and inputs */
+textarea, input {
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+/* styles just the text area */
+
+textarea {
+    width: 100%;
+    height: 100px;
+    resize: vertical; /* makes the text area box only resize vertically */
+    font-family: var(--main_header-font);
+}
+
+/* styles the "Who's contacting..." question to take up the entire width of form */
+#who {
+    width: 100%;
+}
+
+/* styles the "Why are you contacting..." question to take up the entire width of form */
+#why {
+    width: 100%;
+}
+
+/* styles the radio circles */
+
+input[type="radio"] {
+    appearance: radio;
+    width: 15px;
+}
+
+/* styles the labels for radio buttons */
+label[for="educator"], [for="visitor"], [for="other"] {
+    color: black;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+/* styles the checkbox boxes */
+input[type="checkbox"] {
+    appearance: checkbox;
+    width: 15px;
+}
+
+/* styles the checkbox labels */
+label[for="via-email"], [for="via-phone"], [for="via-other"] {
+    color: black;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+/* styling dropdown menu */
+select {
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+/* styling text fields */
+input[type=text], textarea, select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: var(--main_header-font);
+}
+
+input[type=email], textarea, select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: var(--main_header-font);
+}
+
+input[type=tel], textarea, select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: var(--main_header-font);
+}
+
+/* styling form submit button */
+.contact-form__submit-btn {
+    padding: 15px;
+    margin: auto;
+    border-radius: 25px;
+    min-width: 212px;
+    outline: none;
+    border: none;
+    background: var(--dark-green);
+    font-family: var(--main_header-font);
+
+    font-size: 16px;
+    color: #fff;
+}
+
+.contact-form__submit-btn:hover {
+    background-color: var(--light-green);
+}
+
+/* Styling sidebar */
+
+.contact-sidebar {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+	position: relative;
+    margin: 0px 40px 0px 40px;
+    width: 100%;
+    height: fit-content;
+
+    background-color: var(--lighter-green);
+    padding: 40px;
+    border-radius: 8px;
+    font-size: 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: var(--main_header-font);
+    text-align: center;
+}
+
+/* media queries for why us section */
+
+  @media only screen and (max-width: 800px) {
+
+     /* Make the form container vertical */
+     .contact-whyus-info-content__sections {
+      flex-direction: column;
+    }
+    
+
+    /* Adjust the section sizes */
+    .contact-form {
+        max-width: 48em;
+        height: auto;
+       
+    }
+
+    .contact-sidebar {
+        width: 100%;
+        height: auto;
+        margin: 40px auto;
+       
+    }
+
+  }

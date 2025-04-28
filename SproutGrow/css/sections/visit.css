@@ -1,0 +1,67 @@
+/* This section styles the visit section of the homepage */
+
+/* Use a flexbox layout for the visit container and add some margin */
+.visit {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Make the visit content flexible and centered */
+.visit-content {
+    flex: 1;
+    display: flex;
+    position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* Style the visit info section with some padding and alignment */
+.visit-content-info {
+    padding-top: 20px; 
+    padding-bottom: 20px;
+    flex: 1;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+/* Style the visit heading with a large dark green font */
+.visit-content-info h1 {
+    padding-bottom: 10px;
+
+    font-size: 49px;
+    font-family: var(--main_header-font);
+    color: var(--dark-green);
+}
+
+/* Style the visit paragraphs with a medium black font */
+.visit-content-info p {
+    padding-bottom: 10px;
+
+    font-size: 20px;
+    font-family: var(--main_header-font);
+    color: #000;
+}
+
+/* Style the visit map section with a full width and height and a centered layout */
+.visit-content-map {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Style the visit map iframe with a responsive width and height */
+.visit-content-map iframe{
+    width: 80%;
+    height: 500px;
+}

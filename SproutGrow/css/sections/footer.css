@@ -1,0 +1,70 @@
+/* This section styles the footer of the website */
+
+/* Use a flexbox layout for the footer container and add some margin and background color */
+.footer {
+    display: flex;
+    background-color: var(--dark-green);
+
+    overflow: hidden;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+/* Align the first fineprint paragraph to the left */
+.footer-content__fineprint:first-of-type {
+    margin-right: auto;
+  }
+
+/* Make the footer content flexible and horizontal */
+.footer-content {
+    flex: 1;
+    display: flex;
+    position: relative;
+    padding: 20px 40px 10px 40px;
+    flex-direction: row;
+}
+
+/* Style the footer left section with some padding and a white font */
+.footer-content__left {
+    padding-bottom: 10px;
+
+    font-size: 16px;
+    font-family: var(--main_header-font);
+   
+    color: #fff;
+    margin-right: auto;
+}
+
+/* Increase the font size of the first paragraph in the footer left section */
+.footer-content__left p:first-of-type {
+    font-size: 20px; 
+}
+
+/* Align the footer right section to the right */
+.footer-content__right {
+    margin-left: auto;
+}
+
+/* Style the footer info section with some padding and a white font */
+.footer-content__info {
+    padding-bottom: 10px;
+
+    font-size: 16px;
+    font-family: var(--main_header-font);
+    color: #fff;
+    text-align: right;
+
+    margin-left: auto;
+}
+
+/* Align the footer socials section to the end and make it float to the right */
+.footer-content__socials {
+    justify-content: end;
+    float: right;
+}
+
+/* Style the footer socials images with a fixed width and height */
+.footer-content__socials img {
+    width: 25px;
+    height: 25px;
+}

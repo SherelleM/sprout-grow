@@ -1,0 +1,135 @@
+/* styling blog */
+
+.blog__1-hero {
+    display: flex;
+    overflow: hidden;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background-color: var(--dark-green);
+}
+
+/* Make the blog__1-hero content flexible and centered */
+.blog__1-hero-content {
+    flex: 1;
+    display: flex;
+    position: relative;
+    padding: 20px 40px 20px 40px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* Style the blog__1-hero info section with some padding */
+.blog__1-hero-content-info h1 {
+    padding-bottom: 20px;
+    margin-top: 20px;
+    font-size: 49px;
+    font-family: var(--main_header-font);
+    color: #fff;
+}
+
+.blog__1-hero-content-info p {
+    padding-bottom: 10px;
+
+    font-size: 20px;
+    font-family: var(--header-font);
+    color: #fff;
+}
+
+/* Make the blog__1-hero image flexible and responsive */
+.blog__1-hero-image {
+    display: flex;
+	position: relative;
+	max-width: 46em;
+    height: auto;
+    padding: 20px 40px 0px 40px;
+}
+
+
+/* Style the blog__1-hero image with an aspect ratio, drop shadow, and round corners */
+.blog__1-hero-image img {
+	flex: 1 0 100%;
+	object-fit: cover;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	border-radius: 0.5rem;
+    aspect-ratio: 16/9;
+	overflow-x: auto;
+}
+
+/* Use media queries to make the blog__1-hero section responsive for different screen sizes */
+@media only screen and (max-width: 1325px) and (min-width: 800px) {
+
+    /* Make the blog__1-hero container vertical */
+    .blog__1-hero {
+      flex-direction: column;
+    }
+
+    /* Center the blog__1-hero info section text */
+    .blog__1-hero-content-info h1 {
+        text-align: center;
+    }
+    
+    .blog__1-hero-content-info p {
+        text-align: center;
+    }
+    
+
+    /* Center the blog__1-hero image */
+    .blog__1-hero-image {
+        max-width: 48em;
+        height: auto;
+        margin: auto;
+    }
+
+  }
+
+  @media only screen and (max-width: 800px) {
+
+     /* Make the blog__1-hero container vertical */
+    .blog__1-hero {
+      flex-direction: column;
+    }
+
+    /* Center the blog__1-hero info section text */
+    .blog__1-hero-content-info h1 {
+        text-align: center;
+    }
+    
+    .blog__1-hero-content-info p {
+        text-align: center;
+    }
+    
+
+    /* Adjust the blog__1-hero image size */
+    .blog__1-hero-image {
+        max-width: 48em;
+        height: auto;
+       
+    }
+
+  }
+
+  /* styling blog content */
+.blog__1-content {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.content-container h2 {
+    color: var(--dark-green);
+    font-family: var(--main_header-font);
+}
+
+.content-container p {
+    color: #000;
+    font-family: var(--header-font);
+}
+
+.content-container ol, ul {
+    padding-left: 20px;
+    font-family: var(--header-font);
+    color: #000;
+}

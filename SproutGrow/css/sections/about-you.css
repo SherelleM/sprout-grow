@@ -1,0 +1,115 @@
+/* This section styles the about-you section of the homepage */
+
+/* Use a flexbox layout for the about-you container and make it vertical */
+.about-you {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+/* Make the about-you content flexible and centered */
+.about-you-content {
+    flex: 1;
+    display: flex;
+    position: relative;
+    padding: 40px;
+
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* Style the about-you info section with some padding and alignment */
+.about-you-content__info {
+    padding-top: 20px; 
+    padding-bottom: 20px;
+    flex: 1;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+/* Style the about-you heading with a large white font */
+.about-you-content__info h1 {
+    padding-bottom: 10px;
+
+    font-size: 49px;
+    color: var(--dark-green);
+    font-family: var(--main_header-font);
+}
+
+/* Style the about-you paragraphs with a medium white font */
+.about-you-content__info p {
+    padding: 0px 20px 0px 20px;
+
+    font-size: 18px;
+    color: #000000;
+    font-family: var(--header-font);
+
+}
+
+/* Center the about-you cards container and make it responsive */
+.about-you-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Style the about-you cards with a dark green background and a border radius */
+.about-you-card {
+    width: 325px;
+    background-color: var(--dark-green);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+}
+
+/* Style the about-you card images with a full width and a fixed height */
+.about-you-card img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+/* Style the about-you card content with some padding */
+.about-you-card-content {
+    padding: 16px;
+    align-items: end;
+}
+
+/* Style the about-you card headings with white font */
+.about-you-card-content h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-family: var(--main_header-font);
+    color: #fff;
+}
+
+/* Style the about-you card paragraphs with white font */
+.about-you-card-content p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.3;
+    font-family: var(--header-font);
+}
+
+/* Style the about-you card buttons with a white background and a white font */
+.about-you-card-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    margin-top: 16px;
+    color: var(--dark-green);
+    font-family: var(--main_header-font); 
+}
+
+/* Add a hover effect to the about-you card buttons with a lighter green background */
+.about-you-card-btn:hover{
+    background: var(--light-green);
+}

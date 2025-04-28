@@ -1,0 +1,118 @@
+/* This section styles the hero section of the about page */
+
+/* Use a flexbox layout for the about-hero container and add some padding */
+.about-hero {
+    display: flex;
+    overflow: hidden;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+/* Make the about-hero content flexible and centered */
+.about-hero-content {
+    flex: 2;
+    display: flex;
+    position: relative;
+    padding: 20px 40px 20px 40px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* Style the about-hero info section with some padding */
+.about-hero-content-info h1 {
+    padding-bottom: 20px;
+
+    font-size: 49px;
+    font-family: var(--main_header-font);
+    color: var(--dark-green);
+}
+
+.about-hero-content-info p {
+    padding-bottom: 10px;
+
+    font-size: 20px;
+    font-family: var(--header-font);
+    color: #000;
+}
+
+/* Styling sentence about scrolling more */
+#scroll {
+    color: var(--dark-green);
+}
+
+/* Make the about-hero image flexible and responsive */
+.about-hero-image {
+    display: flex;
+	position: relative;
+    align-items: center;
+    justify-content: center;
+	max-width: 46em;
+    max-height: 26em;
+    padding: 20px 40px 0px 40px;
+
+}
+
+
+/* Style the about-hero image with an aspect ratio, drop shadow, and round corners */
+.about-hero-image img {
+	flex: 1 0 100%;
+	object-fit: cover;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	border-radius: 0.5rem;
+    aspect-ratio: 16/9;
+	overflow-x: auto;
+}
+
+/* Use media queries to make the about-hero section responsive for different screen sizes */
+@media only screen and (max-width: 1325px) and (min-width: 800px) {
+
+    /* Make the about-hero container vertical */
+    .about-hero {
+      flex-direction: column;
+    }
+
+    /* Center the about-hero info section text */
+    .about-hero-content-info h1 {
+        text-align: center;
+    }
+    
+    .about-hero-content-info p {
+        text-align: center;
+    }
+    
+
+    /* Center the about-hero image */
+    .about-hero-image {
+        max-width: 48em;
+        height: auto;
+        margin: auto;
+    }
+
+  }
+
+  @media only screen and (max-width: 800px) {
+
+     /* Make the about-hero container vertical */
+    .about-hero {
+      flex-direction: column;
+    }
+
+    /* Center the about-hero info section text */
+    .about-hero-content-info h1 {
+        text-align: center;
+    }
+    
+    .about-hero-content-info p {
+        text-align: center;
+    }
+    
+
+    /* Adjust the about-hero image size */
+    .about-hero-image {
+        max-width: 48em;
+        height: auto;
+       
+    }
+
+  }

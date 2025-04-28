@@ -1,0 +1,194 @@
+/* This section styles the hero section of the homepage */
+
+/* Use a flexbox layout for the hero container and add some padding */
+.hero {
+    display: flex;
+    overflow: hidden;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+/* Make the hero content flexible and centered */
+.hero-content {
+    flex: 1;
+    display: flex;
+    position: relative;
+    padding: 20px 40px 20px 40px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* Style the hero info section with some padding */
+.hero-content-info h1 {
+    padding-bottom: 20px;
+
+    font-size: 49px;
+    font-family: var(--main_header-font);
+    color: var(--dark-green);
+}
+
+.hero-content-info p {
+    padding-bottom: 10px;
+
+    font-size: 20px;
+    font-family: var(--header-font);
+    color: #000;
+}
+
+/* Style the hero buttons section with some spacing and wrapping */
+.hero-content__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+    margin-top: 10px;
+}
+
+/* Style the learn more button with a dark green background and a white font */
+.hero-content__learn-more-btn {
+    padding: 15px;
+    border-radius: 25px;
+    min-width: 212px;
+    outline: none;
+    border: none;
+    background: var(--dark-green);
+    font-family: var(--main_header-font);
+   
+    cursor: pointer;
+
+    color: #fff;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+}
+
+/* Add a hover effect to the learn more button with a lighter green background */
+.hero-content__learn-more-btn:hover{
+    background: var(--light-green);
+}
+
+/* This section styles the hero slideshow of the homepage */
+
+/* Position the hero slider wrapper relative to the hero container */
+.hero-slider-wrapper {
+	position: relative;
+	max-width: 46em;
+    height: auto;
+    padding: 20px 40px 0px 40px;
+}
+
+/* Make the hero slider flexible and responsive */
+.hero-slider {
+	display: flex;
+    aspect-ratio: 16/9;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	border-radius: 0.5rem;
+	-ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+	scrollbar-width: none; /* Hide scrollbar Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hero-slider::-webkit-scrollbar {
+	display: none;
+}
+
+/* Style the hero slider images with a full width and a fixed height */
+.hero-slider img {
+	flex: 1 0 100%;
+	scroll-snap-align: start;
+	object-fit: cover;
+}
+
+/* Style the hero slider navigation with some spacing and positioning */
+.hero-slider-nav {
+	display: flex;
+	column-gap: 1rem;
+	position: relative;
+	bottom: 1.25rem;
+	left: 96%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+/* Style the hero slider navigation links with a white background and a border radius */
+.hero-slider-nav a {
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+}
+
+ /* Use media queries to make the hero section responsive for different screen sizes */
+  @media only screen and (max-width: 1325px) and (min-width: 800px) {
+
+    /* Make the hero container vertical */
+    .hero {
+      flex-direction: column;
+    }
+
+    /* Center the hero info section text */
+    .hero-content-info h1 {
+        text-align: center;
+    }
+    
+    .hero-content-info p {
+        text-align: center;
+    }
+    
+    /* Center the hero buttons section */
+    .hero-content__buttons {
+        justify-content: center;
+    }
+
+    /* Center the learn more button */
+    .hero-content__learn-more-btn {
+        margin: auto;
+    }
+
+    /* Center the hero slider wrapper */
+    .hero-slider-wrapper {
+        max-width: 48em;
+        height: auto;
+        margin: auto;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+
+     /* Make the hero container vertical */
+    .hero {
+      flex-direction: column;
+    }
+
+    /* Center the hero info section text */
+    .hero-content-info h1 {
+        text-align: center;
+    }
+    
+    .hero-content-info p {
+        text-align: center;
+    }
+    
+    /* Center the hero buttons section */
+    .hero-content__buttons {
+        justify-content: center;
+    }
+
+    /* Center the learn more button */
+    .hero-content__learn-more-btn {
+        margin: auto;
+    }
+
+    /* Adjust the hero slider wrapper size */
+    .hero-slider-wrapper {
+        max-width: 48em;
+        height: auto;
+       
+    }
+
+  }

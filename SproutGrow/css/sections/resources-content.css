@@ -1,0 +1,168 @@
+
+
+/* styling headers of each section */
+.resources-section-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.resources-content h2 {
+    font-size: 36px;
+    font-family: var(--main_header-font);
+    color: var(--dark-green);
+    text-align: center;
+}
+
+/* styles the rigister now button*/
+.resources-back-btn {
+    padding: 8px 8px 8px 8px;
+    margin: 5px 0px 5px 20px;
+    background-color: var(--dark-green);
+    text-decoration: none;
+    border-radius: 15px;
+    color: #fff;
+    font-family: var(--main_header-font); 
+}
+
+/* Add a hover effect to button with a lighter green background */
+.resources-back-btn:hover{
+    background: var(--light-green);
+}
+
+/* Center the resources cards container and make it responsive */
+.resources-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+/* Style the resources cards with a green background and a border radius */
+.resources-card {
+    width: 400px;
+    background-color: var(--dark-green);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+}
+
+/* Style the resources card images with a full width and a fixed height */
+.resources-card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Style the resources card content with some padding */
+.resources-card-content {
+    padding: 16px;
+    align-items: end;
+}
+
+/* Style the resources card headings with white font */
+.resources-card-content h3 {
+    font-size: 20px;
+    font-family: var(--main_header-font);
+    color: #fff;
+}
+
+.resources-card-content h4 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-family: var(--main_header-font);
+    color: #fff;
+}
+
+/* Style the resources card paragraphs */
+.resources-card-content p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.3;
+    font-family: var(--header-font);
+}
+
+/* Style the resources card buttons */
+.resources-card-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    margin-top: 16px;
+    color: var(--dark-green);
+    font-family: var(--main_header-font); 
+}
+
+/* Add a hover effect to the resources card buttons with a lighter green background */
+.resources-card-btn:hover{
+    background: var(--light-green);
+}
+
+.resources-workshops-event-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 0 auto;
+	border-radius: 0.25rem; 
+}
+
+/* styling workshop section */
+.resources-workshops-event {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--dark-green);
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    padding: 15px;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	border-radius: 0.5rem;
+}
+
+.resources-workshops-event-date {
+    display: flex;
+    flex: .1;
+    flex-direction: column;
+    font-family: var(--main_header-font);
+    font-size: 20px;
+    color: #fff;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.resources-workshops-event-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    color: #fff;
+}
+
+.resources-workshops-event-info h1 {
+    font-family: var(--main_header-font);
+}
+
+.resources-workshops-event-info p {
+    font-family: var(--header-font);
+}
+
+.resources-register-btn {
+    border: none;
+    display: block;
+    padding: 8px 20px 8px 20px;
+    background-color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    margin-top: 16px;
+    color: var(--dark-green);
+    font-family: var(--main_header-font);  
+    font-size: 16px;
+    text-align: center;
+    width: fit-content;
+}
+
+.resources-register-btn:hover{
+    background: var(--light-green);
+}

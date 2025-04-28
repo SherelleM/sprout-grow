@@ -1,0 +1,38 @@
+/* styling resources nav bar */
+/* Make the resources-nav green with a subtle shadow */
+
+  .resources-nav {
+    background-color: var(--dark-green);
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+
+    margin-bottom: 40px;
+  }
+
+   /* Remove bullets from the resources-nav list */
+  .resources-nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+  }
+
+  .resources-nav li {
+    padding: 20px 30px 20px 30px;
+  }
+
+/* Style the resources-nav links to be centered and text color green on hover */
+  .resources-nav li a {
+    display: block;
+    
+    color: #fff;
+    font-family: var(--main_header-font);
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .resources-nav li a:hover {
+    color: var(--light-green);
+  }

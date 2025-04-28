@@ -1,0 +1,154 @@
+/* This section styles the header of the website */ 
+
+  /* Make the header white, fixed, and with a subtle shadow */
+  .header {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100vw;
+    z-index: 3;
+  }
+  
+    /* Remove the margin, padding, and bullets from the header list and hide the overflow */
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+  }
+  
+   /* Style the header links with some padding, a border, and a dark green color */
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+    color: var(--dark-green);
+    font-family: var(--main_header-font);
+  }
+  
+   /* Add a hover effect to the header links and the menu button with a lighter background */
+  .header li a:hover,
+  .header .header__menu-btn:hover {
+    background-color: #f4f4f4;
+  }
+  
+  /* Style the header logo with some padding and make it float to the left */
+  .header .header__logo {
+    display: block;
+    float: left;
+    padding: 15px 0 10px 0;
+  }
+
+  /* Style the header logo image with a fixed height and a responsive width */
+  .header .header__logo img {
+    margin: auto;
+
+    width: auto;
+    height: 30px;
+    object-fit: contain;
+    
+}
+  
+  /* This section edits the menu that shows with smaller screensizes */
+  
+  /* Hide the header menu by default and add a transition for the menu elements and ensuring it stays under a certain height */
+  .header .header__menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* Edits menu icon */
+  
+   /* Style the menu icon with some padding, a pointer cursor, and a relative position */
+  .header .header__menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  /* Style the menu icon bars with a black background, a fixed height and width, and a relative position giving the apperance hamburger menu bars*/
+  .header .header__menu-icon .nav-icon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+   /* Style the menu icon bars before and after pseudo-elements with a black background, an absolute position, and a transition */
+  .header .header__menu-icon .nav-icon:before,
+  .header .header__menu-icon .nav-icon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  /* Position the menu icon bars before and after pseudo-elements above and below the main bar to form the hamburger menu with div elements*/
+  .header .header__menu-icon .nav-icon:before {
+    top: 5px;
+  }
+  
+  .header .header__menu-icon .nav-icon:after {
+    top: -5px;
+  }
+  
+  /* Editing menu btn */
+  
+  /* Hide the menu button by default so it does not show on larger screensizes */
+  .header .header__menu-btn {
+    display: none;
+  }
+  
+   /* Show the header menu when the menu button is checked and change the max-height */
+  .header .header__menu-btn:checked ~ .header__menu {
+    max-height: 300px;
+  }
+  
+   /* Change the menu icon bars when the menu button is checked and make the background transparent */
+  .header .header__menu-btn:checked ~ .header__menu-icon .nav-icon {
+    background: transparent;
+  }
+  
+  /* Rotate and align the menu icon bars before and after pseudo-elements when the menu button is checked, this creates an animation when clicking the hamburger menu icon */
+  .header .header__menu-btn:checked ~ .header__menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top:0;
+  }
+  
+  .header .header__menu-btn:checked ~ .header__menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top:0;
+  }
+  
+  /* Use a media query to make the header responsive for larger screens */
+  /* 48em = 880px @ 16pt font */
+  
+  @media (min-width: 55em) {
+    /* Make the header list items float to the left */
+    .header li {
+      float: left;
+    }
+    /* Increase the padding of the header links */
+    .header li a {
+      padding: 20px 30px;
+    }
+     /* Make the header menu float to the right and remove the max-height */
+    .header .header__menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+     /* Hide the menu icon */
+    .header .header__menu-icon {
+      display: none;
+    }
+  }
